@@ -1,38 +1,84 @@
-.App {
+.app-container {
+  margin: 20px 0;
+}
+
+.heading {
   text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #14171f;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.invoice-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upload-box {
+  /* background-image: url("../../assets/images/upload.png"); */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  width: 100px;
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.upload-box input.upload {
+  opacity: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.upload-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: unset;
+}
+
+input,
+textarea {
+  font-size: 15px !important;
+}
+
+th,
+td {
+  border: 0 !important;
+}
+
+.preview-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+button.download-btn {
+  width: 100%;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 22px;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s,
+    color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+button.download-btn:hover {
+  background: black;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 1px solid black;
 }
